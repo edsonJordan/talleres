@@ -107,7 +107,16 @@ img{
 /* Start Nav */
 .nav{
     justify-content: space-between;
+    width: 100%;
+    justify-content: center;
+}
+.content__nav{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
     padding: 12px 24px;
+    justify-content: space-between;
+    align-items: center;
 }
 .ul__list{
     display: flex;
@@ -295,6 +304,9 @@ img{
     font-weight: 800;
     color: var(--color__black);
 }
+.p{
+    line-height: calc(1rem * 1.5);
+}
 .btn{
     display: flex;
     align-items: center;
@@ -338,6 +350,7 @@ img{
 .card{
     border-radius: 20px;
     background-color: #ffffff;
+    box-shadow: rgb(229 233 246 / 40%) 10px 40px 50px 0px;
 }
 .content__card{
     display: flex;
@@ -361,7 +374,7 @@ img{
     color: var(--color__black);
 }
 .p__card{
-    font-size: 16;
+    font-size: 16px;
     font-weight: 300;
     color: var(--color__gray--light);
 }
@@ -383,7 +396,7 @@ img{
 .h3__card--slider::after{
     content: '';
     display: block;
-    width: 20%;
+    width: 13%;
     height: 3px;
     background-color: #ffffff;
     margin: 0 auto;
@@ -419,6 +432,8 @@ img{
     flex-direction: column;
     row-gap: 12px;
     box-shadow: 10px  40px 50px 0 rgba(229, 233, 246, .4);
+    
+    min-height: 250px;
 }
 .img__header--article{
     width: 100%;
@@ -428,8 +443,156 @@ img{
     flex-direction: column;
     row-gap: 34px;
 }
-
-
 .none{
     display: none;
+}
+
+@media(min-width: 1024px) {
+
+    .nav{
+
+    }
+    .main{
+        row-gap: 190px;
+    }
+    .ul__list {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        top: 0;
+        width: 45%;
+    }
+    .menu__icon{
+        display: none;
+    }
+    /* Section principal */
+    .section__principal{
+
+    }
+    .content__section--principal{
+        flex-direction: row;        
+        width: 80%;
+    }
+    .h1__principal{
+        text-align: left;
+    }
+    .block__content{
+        justify-content: center;
+        
+    }
+    .block__content--principal{
+        align-items: flex-start;
+        padding-right: 3rem;
+    }
+
+
+    /* Section services */
+    .p__services{
+        width: 90%;
+    }
+    .content__section--services{
+        width: 80%;
+    }
+    .cards__services{
+        width: 100%;
+    }
+    .section__services{
+        background-size: contain;
+        background-position: left;
+    }
+    .block__content--services{
+        row-gap: 69px;
+    }
+    .h2__leading::after{
+        margin: initial;
+        margin-top: 2rem;
+    }
+
+    /* Section Leading */
+   .content__section--leading{
+       width: 80%;
+   }
+    .section__leading--reverse .content__section--leading{
+        flex-direction: row-reverse;
+    }
+
+    .content__section--leading{
+        flex-direction: row;
+    }
+    .block__content--leading{
+        width: 45%;
+        padding: 3rem;
+    }
+    .block__content--leading .btn__pildora--ghost{
+        align-self: flex-start;
+    }
+
+    /* Slider Cards */
+    .content__section--slider{
+        border-radius: 24px;
+       
+    }
+    .content__section--slider{
+       
+    }
+    .section__slider{
+       
+        width: 60%;
+    }
+    .cards__slider{
+        background-image: url(https://res.cloudinary.com/sunqupacha/image/upload/v1647901220/portafolio/talleres/taller2/general/element2_dktcvs.svg);
+        background-repeat: no-repeat;
+        background-size: 15%;
+        background-position: right top;
+    }
+    .card__body--slider{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .block__author{
+        flex-direction: row;
+        column-gap: 29px;
+    }
+    .span__slider{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 280px;
+    }
+    /* section articles */
+    .content__section--articles{
+        align-items: center;
+        width: 80%;
+    }
+    .h2__articles{
+        text-align: center;
+    }
+    .content__card--articles{
+        flex-direction: row;
+        column-gap: 34px;
+    }
+    .card__article{
+        border-radius: 24px;
+    }
+    .border-bottom--center::after{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer{
+        margin-top: 200px;
+    }
+    .content__footer{
+        padding: 113px 190px;
+        flex-direction: row;
+        column-gap: 140px;
+    }
+}
+@media (min-width: 1400px){
+    .cards__services{
+        
+        grid-template-columns:repeat(auto-fill, minmax(400px, 1fr));
+    }
+    .float-left{
+        align-self: flex-start;
+    }
 }
