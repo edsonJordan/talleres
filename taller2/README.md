@@ -16,6 +16,8 @@ Arrow Left --> https://res.cloudinary.com/sunqupacha/image/upload/v1647901220/po
 
 Arrow Right --> https://res.cloudinary.com/sunqupacha/image/upload/v1647901220/portafolio/talleres/taller2/general/ArrowRight_kddsg1.svg
 
+Arrow Down --> https://res.cloudinary.com/sunqupacha/image/upload/v1647908366/portafolio/talleres/taller2/general/arrow-down_ozksdb.svg
+
 <!-- Section Principal -->
 image Section https://res.cloudinary.com/sunqupacha/image/upload/v1647901291/portafolio/talleres/taller2/section%20principal/trafalgar-header_illustration_1_iekkpa.svg
 
